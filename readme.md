@@ -1,2 +1,2 @@
-# l-gomock-swaggo
+# L-gomock
 # L-swaggo
