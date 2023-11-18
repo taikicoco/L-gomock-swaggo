@@ -5,7 +5,7 @@
 package mock
 
 import (
-	model "l-gomock/model"
+	model "l-gomock-swaggo/model"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
@@ -34,13 +34,27 @@ func (m *MockUser) EXPECT() *MockUserMockRecorder {
 	return m.recorder
 }
 
-// Update mocks base method.
-func (m *MockUser) Update(user *model.User) (int, error) {
+// Get mocks base method.
+func (m *MockUser) Get(id int) (*model.User, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "Update", user)
-	ret0, _ := ret[0].(int)
+	ret := m.ctrl.Call(m, "Get", id)
+	ret0, _ := ret[0].(*model.User)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
+}
+
+// Get indicates an expected call of Get.
+func (mr *MockUserMockRecorder) Get(id interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Get", reflect.TypeOf((*MockUser)(nil).Get), id)
+}
+
+// Update mocks base method.
+func (m *MockUser) Update(user *model.User) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Update", user)
+	ret0, _ := ret[0].(error)
+	return ret0
 }
 
 // Update indicates an expected call of Update.

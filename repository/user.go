@@ -1,9 +1,10 @@
 package repository
 
 import (
-	"l-gomock/model"
+	"l-gomock-swaggo/model"
 )
 
 type User interface {
-	Update(user *model.User) (int, error)
+	Update(user *model.User) error
+	Get(id int) (*model.User, error)
 }
