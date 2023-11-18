@@ -1,0 +1,25 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: This is a sample
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: sample API
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      consumes:
+      - application/json
+      description: Hello Go
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Hello
+swagger: "2.0"
