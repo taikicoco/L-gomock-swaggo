@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"l-gomock/model"
-	"l-gomock/repository"
+	"l-gomock-swaggo/model"
+	"l-gomock-swaggo/repository"
 )
 
 type User struct {

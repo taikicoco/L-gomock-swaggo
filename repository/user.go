@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"l-gomock/model"
+	"l-gomock-swaggo/model"
 )
 
 type User interface {

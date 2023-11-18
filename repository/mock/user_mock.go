@@ -5,7 +5,7 @@
 package mock
 
 import (
-	model "l-gomock/model"
+	model "l-gomock-swaggo/model"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

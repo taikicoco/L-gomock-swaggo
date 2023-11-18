@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"l-gomock/model"
-	"l-gomock/repository/mock"
+	"l-gomock-swaggo/model"
+	"l-gomock-swaggo/repository/mock"
 	"testing"
 
 	"github.com/golang/mock/gomock"
